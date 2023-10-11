@@ -10,12 +10,6 @@ namespace AvaliacaoFinal
     {
         static public void handlePhrase()
         {
-            int resultMultiplication = 0;
-            int resultDivision = 0;
-            int restOfDivision = 0;
-            List<int> chosenNumbers = new List<int>();
-
-
             try
             {
                 Console.WriteLine("Digite uma frase: ");
@@ -29,7 +23,8 @@ namespace AvaliacaoFinal
 
                 for (int i = 0; i < wordsWithoutFormat.Length; i++)
                 {
-                    if (wordsWithoutFormat[i].Length > 0)
+                    bool isNumeric = int.TryParse(wordsWithoutFormat[i], out int n);
+                    if (wordsWithoutFormat[i].Length > 0 && isNumeric == false)
                     {
                         words.Add(wordsWithoutFormat[i]);
                     }
@@ -89,3 +84,6 @@ namespace AvaliacaoFinal
     }
 }
 
+
+// TO-DO: faltou tirar palavras que tenham numero no meio delas rsrs, por exemplo: "sdfdgf45dgd",
+// não consegui fazer no tempo mas fica como teste e vou descobrir como resolver depois
