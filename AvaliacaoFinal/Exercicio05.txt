@@ -1,0 +1,8 @@
+Questão 5 - Resposta: e. 
+
+Foi realizado um laço de repetição onde seu resultado é imprimir o valor da variável i, tendo as seguintes condições estabelicidas:
+- inicia-se com -5;
+- faz um acressímo de 3 em cada loop;
+- o valor não pode ser maior que 7.
+Dessa forma, o resultado é:
+-5, -2, 1, 4, 7

@@ -1,0 +1,14 @@
+Questão 4 - Resposta: c. 
+
+Int32 numero;
+numero = Convert.ToInt16(!(21 > 21));
+Console.WriteLine(numero);
+
+Dentro do método ToInt16 foi realizado uma operação de lógica onde:
+- 21 > 21 retorna false
+- ! retorna o contrário do boleano, neste caso retornando um verdadeiro;
+
+Como a lógica foi armazenada em uma variável numérica, ficou o valor 1, que é uma representação de verdadeiro.
+
+1 == true
+0 == false
